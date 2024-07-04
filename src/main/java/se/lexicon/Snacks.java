@@ -13,6 +13,8 @@ public class Snacks extends Product {
     }
 
     @Override
+    public String use() {
+        return getProductName();
 
 
     }
