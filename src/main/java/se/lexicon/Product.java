@@ -13,7 +13,9 @@ public abstract class Product {
         this.productName = productName;
     }
 
-
+    /**
+     * Abstract method to examine the product
+     */
 
     public abstract String examine();
 
