@@ -2,11 +2,9 @@ package se.lexicon;
 
 public class drinks extends Product{
 
-    private final int quantity;
-
-    public drinks(String productName, int quantity, double price) {
+    public drinks(String productName, long volume, double price) {
         super(price, productName);
-        this.quantity = quantity;
+        String volume1 = String.valueOf(volume);
     }
 
     @Override
