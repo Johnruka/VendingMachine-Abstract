@@ -2,9 +2,12 @@ package se.lexicon;
 
 public class drinks extends Product{
 
-    public drinks(String productName, long volume, double price) {
+    private final int id;
+
+    public drinks(int id,String productName, long volume, double price) {
         super(price, productName);
         String volume1 = String.valueOf(volume);
+        this.id = productSequencer.nextId();
     }
 
     @Override

@@ -2,8 +2,11 @@ package se.lexicon;
 
 public class Snacks extends Product {
 
-    public Snacks(double price, String snack) {
+    private final  int id;
+
+    public Snacks(int id,double price, String snack) {
         super(price, snack);
+        this.id = productSequencer.nextId();
     }
 
     @Override
