@@ -15,6 +15,9 @@ public class drinks extends Product{
     }
 
     @Override
+    public String use() {
+        String description = getProductName();
+        return description;
 
     }
 }
