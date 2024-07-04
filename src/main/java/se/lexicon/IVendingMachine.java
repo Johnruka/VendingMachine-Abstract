@@ -12,6 +12,11 @@ public class IVendingMachine implements VendingMachine {
     }
 
     @Override
+    public void addCurrency(int amount) {
+        if (isValidDenomination(amount)) {
+            depositPool += amount;
+        } else {
+            throw new IllegalArgumentException("Invalid denomination: " + amount);
 
 
         }
