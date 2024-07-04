@@ -34,6 +34,9 @@ public abstract class Product {
         return price;
     }
 
+    public String getProductName() {
+        return productName;
+
 
     }
 
